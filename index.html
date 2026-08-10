@@ -8,12 +8,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
+  <header class="topbar">
     <div class="wrap nav-wrap">
-      <a class="brand" href="index.html">A Page a Day</a>
+      <a class="brand" href="index.html">
+        <span class="brand-mark">A</span>
+        <span>A Page a Day</span>
+      </a>
       <nav>
         <a href="#journeys">Journeys</a>
-        <a href="#how-it-works">How it works</a>
+        <a href="#ritual">How it works</a>
         <a href="#about">About</a>
       </nav>
     </div>
@@ -21,182 +24,239 @@
 
   <main>
     <section class="hero">
+      <div class="leaf leaf-one"></div>
+      <div class="leaf leaf-two"></div>
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <span class="eyebrow">READ • REFLECT • DISCOVER</span>
-          <h1>One page. One idea. One day at a time.</h1>
+          <span class="eyebrow light">READ • REFLECT • DISCOVER</span>
+          <h1>Give your mind<br><em>one good page.</em></h1>
           <p class="hero-text">
-            Explore mythology, philosophy, religion and classic literature through
-            short daily readings created to spark curiosity, reflection and a love of learning.
+            A quiet daily reading ritual through mythology, philosophy,
+            religion and classic literature.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#journeys">Explore the journeys</a>
-            <a class="button secondary" href="#how-it-works">See how it works</a>
+            <a class="button gold" href="#journeys">Explore the 3 journeys</a>
+            <a class="text-link" href="#ritual">How it works ↓</a>
           </div>
-          <p class="small-note">Free to use • Android • Intended for users aged 18+</p>
+          <div class="hero-facts">
+            <span>90 pages</span>
+            <span>3 journeys</span>
+            <span>Free on Android</span>
+            <span>18+</span>
+          </div>
         </div>
 
-        <div class="hero-card">
-          <div class="page-card">
-            <span class="page-label">TODAY'S PAGE</span>
-            <h2>Discover something worth thinking about.</h2>
-            <p>
-              A short story or idea, a reflection, a quick question and optional
-              recommendations to keep exploring.
-            </p>
-            <div class="page-meta">
-              <span>+10 XP</span>
-              <span>Daily progress</span>
-              <span>New reward</span>
+        <div class="visual-stack" aria-label="Preview of the A Page a Day reading experience">
+          <div class="mini-card back-card">
+            <span>DAY 14</span>
+            <strong>Difference does not have to become distance.</strong>
+          </div>
+          <div class="phone-card">
+            <div class="phone-top">
+              <span>DAY 03</span>
+              <span>✦</span>
             </div>
+            <div class="divider"></div>
+            <h2>Remember that this day is finite.</h2>
+            <p class="sub">Tibetan Buddhist teachings — mortality as a reason to notice life.</p>
+            <div class="inner-note">
+              <span>PAUSE & REFLECT</span>
+              <p>If you knew you would never live this exact day again, what would you pay more attention to?</p>
+            </div>
+            <div class="reward-row">
+              <span>+10 XP</span>
+              <span>New reward unlocked</span>
+            </div>
+          </div>
+          <div class="mini-card front-card">
+            <span>DAY 01</span>
+            <strong>Who is my neighbour?</strong>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="intro section">
-      <div class="wrap narrow">
-        <span class="eyebrow">90 PAGES • 3 JOURNEYS</span>
-        <h2>Curiosity has more than one path.</h2>
+    <section class="manifesto">
+      <div class="wrap manifesto-grid">
+        <span class="eyebrow">A SMALLER WAY TO LEARN</span>
         <p>
-          A Page a Day is designed for people who want to keep learning without turning
-          learning into another task. Each journey contains 30 short daily pages that can
-          be enjoyed in a few quiet minutes.
+          Not another endless feed. Not a course you have to finish.
+          Just <strong>one thoughtful page at a time</strong> — enough to discover
+          something new and carry one idea into the rest of your day.
         </p>
       </div>
     </section>
 
-    <section id="journeys" class="section">
+    <section id="journeys" class="section journeys-section">
       <div class="wrap">
         <div class="section-heading">
-          <span class="eyebrow">CHOOSE YOUR JOURNEY</span>
-          <h2>Three ways to explore the world.</h2>
+          <span class="eyebrow">90 PAGES • 3 JOURNEYS</span>
+          <h2>Follow your curiosity.</h2>
         </div>
 
         <div class="journey-grid">
-          <article class="journey-card">
-            <div class="journey-icon">✦</div>
-            <p class="journey-kicker">30 DAYS</p>
-            <h3>Myths Around the World</h3>
-            <p>
-              Travel across cultures through gods, heroes, sacred animals, creation
-              stories and ancient symbols — with reflections that connect old myths to
-              modern life.
+          <article class="journey-card myth">
+            <div class="journey-number">01</div>
+            <div class="symbol">✦</div>
+            <p class="kicker">30 DAYS</p>
+            <h3>Myths Around<br>the World</h3>
+            <p class="desc">
+              Gods, heroes, sacred animals, creation stories and ancient symbols
+              from cultures across the world.
             </p>
+            <div class="tags">
+              <span>Prometheus</span><span>Anansi</span><span>Amaterasu</span>
+            </div>
           </article>
 
-          <article class="journey-card">
-            <div class="journey-icon">☼</div>
-            <p class="journey-kicker">30 DAYS</p>
-            <h3>Wisdom for Everyday Life</h3>
-            <p>
-              Explore ideas from philosophy and religious traditions about kindness,
-              impermanence, meaning, attachment, courage, attention and how we choose to live.
+          <article class="journey-card wisdom">
+            <div class="journey-number">02</div>
+            <div class="symbol">☼</div>
+            <p class="kicker">30 DAYS</p>
+            <h3>Wisdom for<br>Everyday Life</h3>
+            <p class="desc">
+              Ideas about kindness, impermanence, meaning, attachment,
+              courage and attention.
             </p>
+            <div class="tags">
+              <span>Stoicism</span><span>Zen</span><span>Ubuntu</span>
+            </div>
           </article>
 
-          <article class="journey-card">
-            <div class="journey-icon">❦</div>
-            <p class="journey-kicker">30 DAYS</p>
-            <h3>30 Days of the Classics</h3>
-            <p>
-              Rediscover Austen, the Brontës, Hugo, Quiroga, Borges, Woolf and more
-              through concise introductions, reflections and book recommendations.
+          <article class="journey-card classics">
+            <div class="journey-number">03</div>
+            <div class="symbol">❦</div>
+            <p class="kicker">30 DAYS</p>
+            <h3>30 Days of<br>the Classics</h3>
+            <p class="desc">
+              Austen, the Brontës, Hugo, Quiroga, Woolf, Borges and more —
+              with reflections and reading recommendations.
             </p>
+            <div class="tags">
+              <span>Austen</span><span>Quiroga</span><span>Borges</span>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="how-it-works" class="section soft-section">
-      <div class="wrap">
-        <div class="section-heading">
-          <span class="eyebrow">A SMALL DAILY RITUAL</span>
-          <h2>Learn without rushing.</h2>
+    <section id="ritual" class="section ritual-section">
+      <div class="wrap ritual-grid">
+        <div class="ritual-copy">
+          <span class="eyebrow light">YOUR DAILY RITUAL</span>
+          <h2>Five quiet minutes can still change the direction of a day.</h2>
+          <p>
+            Each page is short enough to fit into real life, but rich enough
+            to leave you with something worth thinking about.
+          </p>
         </div>
 
-        <div class="steps-grid">
-          <article class="step">
+        <div class="steps">
+          <article>
             <span>01</span>
-            <h3>Read</h3>
-            <p>Open one short page from your current 30-day journey.</p>
+            <div>
+              <h3>Read</h3>
+              <p>A concise story, book introduction or idea.</p>
+            </div>
           </article>
-          <article class="step">
+          <article>
             <span>02</span>
-            <h3>Reflect</h3>
-            <p>Pause with a question that brings the idea into everyday life.</p>
+            <div>
+              <h3>Reflect</h3>
+              <p>A question that connects the page to everyday life.</p>
+            </div>
           </article>
-          <article class="step">
+          <article>
             <span>03</span>
-            <h3>Discover</h3>
-            <p>Explore optional books and resources when a subject catches your attention.</p>
+            <div>
+              <h3>Answer</h3>
+              <p>A quick question to anchor what you just discovered.</p>
+            </div>
           </article>
-          <article class="step">
+          <article>
             <span>04</span>
-            <h3>Collect</h3>
-            <p>Build your streak, earn XP and unlock a new collectible as you progress.</p>
+            <div>
+              <h3>Keep exploring</h3>
+              <p>Optional books and resources when curiosity wants more.</p>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="wrap split">
-        <div>
-          <span class="eyebrow">ABOUT THE APP</span>
-          <h2>A little less scrolling. A little more discovering.</h2>
+    <section class="progress-section">
+      <div class="wrap progress-grid">
+        <div class="progress-card">
+          <div class="progress-top">
+            <span>YOUR JOURNEY</span>
+            <strong>17 / 30</strong>
+          </div>
+          <div class="progress-bar"><i></i></div>
+          <div class="progress-stats">
+            <div><strong>170</strong><span>XP</span></div>
+            <div><strong>7</strong><span>day streak</span></div>
+            <div><strong>17</strong><span>rewards</span></div>
+          </div>
         </div>
-        <div>
+
+        <div class="progress-copy">
+          <span class="eyebrow">A LITTLE MOMENTUM</span>
+          <h2>Make learning feel like something you want to return to.</h2>
           <p>
-            A Page a Day brings together concise educational storytelling, reflective
-            prompts, quizzes and optional recommendations for further reading.
-          </p>
-          <p>
-            The app uses original summaries and commentary. It is designed to introduce
-            ideas and books, not replace the original works themselves.
-          </p>
-          <p>
-            A Page a Day is free to use and supported by advertising. Ads are shown at
-            natural breaks rather than inside the reading experience.
+            Each 30-day journey has its own progress and collectibles, while
+            your XP and streak continue across the whole app.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="quote-section">
-      <div class="wrap narrow">
-        <p class="quote">You do not have to read everything. Just keep discovering.</p>
+    <section id="about" class="section about-section">
+      <div class="wrap about-grid">
+        <div>
+          <span class="eyebrow">ABOUT A PAGE A DAY</span>
+          <h2>A little less scrolling.<br>A little more discovering.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            A Page a Day combines original summaries and commentary,
+            reflective prompts, quizzes and optional recommendations for further learning.
+          </p>
+          <p>
+            It is designed to introduce books, traditions and ideas — not replace
+            the original works themselves.
+          </p>
+          <p>
+            The app is free to use and supported by advertising. Ads appear at
+            natural breaks after a completed page, never inside the reading itself.
+          </p>
+        </div>
       </div>
     </section>
 
-    <section class="cta section">
-      <div class="wrap cta-card">
-        <div>
-          <span class="eyebrow">A PAGE A DAY</span>
-          <h2>Make curiosity part of your day.</h2>
-          <p>Available on Android. Google Play link coming soon.</p>
-        </div>
-        <span class="coming-soon">Google Play • Coming soon</span>
+    <section class="closing">
+      <div class="wrap closing-inner">
+        <span class="closing-symbol">✦</span>
+        <p>You do not have to read everything.</p>
+        <h2>Just keep discovering.</h2>
+        <span class="play-badge">Google Play • Coming soon</span>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="wrap footer-grid">
+    <div class="wrap footer-main">
       <div>
-        <strong>A Page a Day</strong>
+        <a class="footer-brand" href="index.html">A Page a Day</a>
         <p>Discover the world one page at a time.</p>
-        <p class="age-note">Intended for users aged 18 years and older.</p>
+        <p class="age">Intended for users aged 18 years and older.</p>
       </div>
-
       <div class="footer-links">
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms</a>
         <a href="delete-account.html">Delete Account</a>
       </div>
     </div>
-
-    <div class="wrap copyright">
+    <div class="wrap footer-bottom">
       © 2026 A Page a Day • Developed by Gabriela González
     </div>
   </footer>
