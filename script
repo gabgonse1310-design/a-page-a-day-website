@@ -1,0 +1,44 @@
+(() => {
+  const buttons = document.querySelectorAll('.lang-btn');
+  const translatable = document.querySelectorAll('[data-en][data-es]');
+
+  function setLanguage(lang) {
+    document.documentElement.lang = lang;
+
+    translatable.forEach((element) => {
+      const value = element.dataset[lang];
+      if (value !== undefined) {
+        element.innerHTML = value;
+      }
+    });
+
+    buttons.forEach((button) => {
+      button.classList.toggle('active', button.dataset.lang === lang);
+    });
+
+    try {
+      localStorage.setItem('apageaday-language', lang);
+    } catch (_) {}
+  }
+
+  let initialLanguage = 'en';
+
+  try {
+    const saved = localStorage.getItem('apageaday-language');
+    if (saved === 'en' || saved === 'es') {
+      initialLanguage = saved;
+    } else if ((navigator.language || '').toLowerCase().startsWith('es')) {
+      initialLanguage = 'es';
+    }
+  } catch (_) {
+    if ((navigator.language || '').toLowerCase().startsWith('es')) {
+      initialLanguage = 'es';
+    }
+  }
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => setLanguage(button.dataset.lang));
+  });
+
+  setLanguage(initialLanguage);
+})();
